@@ -10,7 +10,7 @@ module.exports = {
 
   create(score) {
     return database("scores")
-      .from("scores")
+    //   .from("scores")
       .insert(score)
       .returning("*")
       .then(record => record[0]);
@@ -23,7 +23,7 @@ module.exports = {
       .orderBy("score");
   },
 
-  update(id, student) {
+  update(id, scores) {
     return database("scores")
       .update(scores)
       .where("id", id)
