@@ -9,23 +9,23 @@ exports.seed = function(knex, Promise) {
         return knex("scores").insert([
           {
             initials: "mlc",
-            score: "100"
+            score: 100
           },
           {
             initials: "mlc",
-            score: "99"
+            score: 99
           },
           {
             initials: "mlc",
-            score: "98"
+            score: 98
           },
           {
             initials: "mlc",
-            score: "97"
+            score: 97
           },
           {
             initials: "mlc",
-            score: "96"
+            score: 96
           }
         ]);
       });

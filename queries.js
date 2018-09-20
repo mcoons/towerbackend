@@ -5,7 +5,7 @@ module.exports = {
   list() {
     return database("scores")
       .select()
-      .orderBy("score");
+      .orderBy("score","desc");
   },
 
   create(score) {

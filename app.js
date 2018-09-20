@@ -29,6 +29,7 @@ app.get('/', (request, response, next) => response.send('Hello There'));
 app.get("/api/", (request, response, next) => {
   queries
     .list()
+    // .orderBy("score", "asc")
     .then(scores => { response.json({ scores }); })
     .catch(next);
 });
