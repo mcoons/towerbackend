@@ -29,7 +29,6 @@ app.get('/', (request, response, next) => response.send('Hello There'));
 app.get("/api/", (request, response, next) => {
   queries
     .list()
-    // .orderBy("score", "asc")
     .then(scores => { response.json({ scores }); })
     .catch(next);
 });
@@ -53,9 +52,6 @@ app.delete("/api/:id", (request, response, next) => {
     response.status(204).json({deleted: true});
   }).catch(next);
 });
-
-
-
 
 
 

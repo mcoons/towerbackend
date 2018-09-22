@@ -10,7 +10,6 @@ module.exports = {
 
   create(score) {
     return database("scores")
-    //   .from("scores")
       .insert(score)
       .returning("*")
       .then(record => record[0]);
@@ -23,13 +22,13 @@ module.exports = {
       .orderBy("score");
   },
 
-  update(id, scores) {
-    return database("scores")
-      .update(scores)
-      .where("id", id)
-      .returning("*")
-      .then(record => record[0]);
-  },
+  // update(id, scores) {
+  //   return database("scores")
+  //     .update(scores)
+  //     .where("id", id)
+  //     .returning("*")
+  //     .then(record => record[0]);
+  // },
 
   delete(id) {
     return database("scores")
