@@ -9,28 +9,28 @@ exports.seed = function(knex, Promise) {
         return knex("scores").insert([
           {
             initials: "mlc",
-            level: 1,
-            score: 100
+            level: 5,
+            score: 5000
+          },
+          {
+            initials: "mlc",
+            level: 4,
+            score: 4000
+          },
+          {
+            initials: "mlc",
+            level: 3,
+            score: 3000
+          },
+          {
+            initials: "mlc",
+            level: 2,
+            score: 1000
           },
           {
             initials: "mlc",
             level: 1,
-            score: 99
-          },
-          {
-            initials: "mlc",
-            level: 1,
-            score: 98
-          },
-          {
-            initials: "mlc",
-            level: 1,
-            score: 97
-          },
-          {
-            initials: "mlc",
-            level: 1,
-            score: 96
+            score: 500
           }
         ]);
       });
